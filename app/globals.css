@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Tailwind is the css that we use */
 body {
   background: gainsboro;
 }

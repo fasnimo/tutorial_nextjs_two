@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+// This is an nested page inside of info
+// If you delete the page but not the folder it will cause an 404 error
 function ContactPage() {
   return (
     <div>
