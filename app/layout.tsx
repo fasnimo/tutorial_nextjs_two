@@ -1,9 +1,16 @@
 import './globals.css';
 // global css is imported into this layout to use
 import NavBar from '@/components/NavBar';
+import type { Metadata } from 'next';
 import {Inter, Inconsolata, Roboto} from 'next/font/google';
 
 const inter = Inter({subsets:['latin']});
+
+export const metadata: Metadata = {
+  title:'Next.Js Project',
+  description:'A Next.js Project with TypeScript and TailwindCSS.',
+  keywords:'Next.js, Typescript, TailwindCSS',
+}
 //These are other fonts and ways to include fonts
 // const inconsolata = Inconsolata({subsets:['latin']});
 // const roboto = Roboto({subsets:['latin'], weight:['400']});
