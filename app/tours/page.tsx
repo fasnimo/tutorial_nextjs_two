@@ -22,14 +22,16 @@ async function ToursPage() {
   return (
     <section>
         <h1 className="text-3xl mb-4">Tours</h1>
-        {/* <TourList tours = {data} onClickHandler = {handleOnClick}/> */}
-        {data.map((tour) => {
-            return(
-              <Link key={tour.id} href={`/tours/${tour.id}`} className='hover:text-blue-500'>
-                <h2>{tour.name}</h2>
-              </Link>              
-            );
-            })}
+        <div className="grid md:grid-cols-2 gap-8">
+          {data.map((tour) => {
+              return(
+                <Link key={tour.id} href={`/tours/${tour.id}`} className='hover:text-blue-500'>
+                  <h2>{tour.name}</h2>
+                </Link>              
+              );
+              })
+          }     
+        </div>     
     </section>
   )
 }
